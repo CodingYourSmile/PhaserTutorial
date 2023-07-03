@@ -62,6 +62,7 @@ export default class Game extends Phaser.Scene
 
     update() 
     {
+        this.platforms.children.iterate( child => {} )
         const touchingDown = this.player.body.touching.down;
 
         if (touchingDown) {
